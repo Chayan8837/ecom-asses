@@ -10,6 +10,7 @@ cd ./backend
 echo "Starting Order Service..."
 cd ./product-order-service
 mv .env.example .env
+yarn install
 yarn start &
 cd ..
 
@@ -17,6 +18,7 @@ cd ..
 echo "Starting Custome Service..."
 cd ./customer-service
 mv .env.example .env
+yarn install
 yarn start &
 cd ..
 
@@ -28,6 +30,7 @@ echo "Starting Frontend..."
 
 # # Go to the frontend directory
 cd ./project-23
+yarn install
 yarn dev
 
 # # End of Script
